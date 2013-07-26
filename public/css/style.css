@@ -518,7 +518,7 @@ Page sidebar
   display: block;
   width: 8px;
   height: 25px;
-  background-image: url("images/sidebar-menu-arrow.png");
+  background-image: url(../images/sidebar-menu-arrow2.png);
   float: right;
   position: absolute;
   right:0px;
