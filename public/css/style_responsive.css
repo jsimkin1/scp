@@ -192,6 +192,10 @@ For tablets and phones
 	/***
 	Page header
 	***/
+	.navbar-search {
+	  width: 40%;
+	}
+
 	.header .navbar-inner .container-fluid {
 		margin-left: 10px !important;
 		margin-right: 10px !important;
