@@ -105,6 +105,19 @@ body {
   width: 50%;
   margin-top:4px;
   font-family: 'MuseoSans-300', 'Open Sans' !important;
+  background-image: url(../images/search-icon.png);
+  background-repeat: no-repeat;
+  background-position:98%; 
+}
+
+.navbar-search .submit {
+  display: block;
+  float: right;
+  margin-top: 8px;
+  width: 13px;
+  height: 13px;
+  
+  
 }
 
 /***
