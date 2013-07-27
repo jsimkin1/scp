@@ -859,6 +859,12 @@ var App = function () {
         statisticsUpdate();
 
         //site activities
+        $(window).resize(function(){
+            var container_id = $('#your_container_id');
+            container_id.empty();
+            renderGraphic(container_id.width(),container_id.height());
+        })
+        
         var comp_data = [
             { label: "Competitive",  data: 45, color: "#ff9e1b"},
             { label: "Overpriced",  data: 70, color: "#00a9e0"},

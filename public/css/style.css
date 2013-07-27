@@ -115,9 +115,16 @@ body {
   float: right;
   margin-top: 8px;
   width: 13px;
-  height: 13px;
-  
-  
+  height: 13px;  
+}
+
+.term {
+  margin-top: 5px;
+  width: 150px;
+}
+
+#plot_competitiveness{
+  width: 100%;
 }
 
 /***
