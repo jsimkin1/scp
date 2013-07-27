@@ -780,6 +780,10 @@ Sidebar toggler(show/hide)
   margin-left: 35px !important;
 }
 
+.sidebar-closed .term {
+  display: none;
+}
+
 /* ie8 fixes */
 .ie8 .page-sidebar {
   position: absolute;
