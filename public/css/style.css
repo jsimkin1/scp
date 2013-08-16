@@ -147,6 +147,27 @@ a {
   color: #0d638f;
 }
 
+.dataTables_length {
+  display: none;
+  float: right;
+}
+
+.dataTables_filter{
+  float: left;
+}
+
+.clearfix{
+  float:right;
+}
+
+#sample_editable_1 thead tr th{
+  font-family: 'MuseoSans-300', 'Open Sans' !important;
+}
+
+.icon-angle-down{
+  margin-left: 5px;
+}
+
 /***
 General backgrounds
 ***/
