@@ -156,12 +156,33 @@ a {
   float: left;
 }
 
+.table-link{
+  color:#00a9e0 !important;
+  text-decoration: underline;
+}
+
+.table-link:hover{
+  text-decoration: none;
+}
+
+.table-status-open{
+  border-left: 6px solid #00af66;
+}
+
+.table-status-shipped{
+  border-left: 6px solid #00a9e0;
+}
+
+.table-status-cancel{
+  border-left: 6px solid #e4002b;
+}
+
 .clearfix{
   float:right;
 }
 
 #sample_editable_1 thead tr th{
-  font-family: 'MuseoSans-300', 'Open Sans' !important;
+  font-family: 'MuseoSans-500', 'Open Sans' !important;
 }
 
 .icon-angle-down{
