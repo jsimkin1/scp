@@ -1,2 +1,2 @@
-source :rubygems
-gem 'rack'
+source 'https://rubygems.org'
+gem 'github-pages'
