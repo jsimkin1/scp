@@ -30,6 +30,22 @@ Purchase: http://themeforest.net/item/metronic-responsive-admin-dashboard-templa
 	<link href="js/jqvmap/jqvmap/jqvmap.css" media="screen" rel="stylesheet" type="text/css" />
 	<link rel="shortcut icon" href="favicon.ico" />
 	<link rel="stylesheet" href="js/data-tables/DT_bootstrap.css" />
+	<link rel="stylesheet" type="text/css" href="css/bootstrap-datepicker/css/datepicker.css" />
+
+   <link href="css/bootstrap-fileupload/bootstrap-fileupload.css" rel="stylesheet" />
+   <link rel="stylesheet" type="text/css" href="css/gritter/css/jquery.gritter.css" />
+   <link rel="stylesheet" type="text/css" href="css/chosen-bootstrap/chosen/chosen.css" />
+   <link rel="stylesheet" type="text/css" href="css/jquery-tags-input/jquery.tagsinput.css" />
+   <link rel="stylesheet" type="text/css" href="css/clockface/css/clockface.css" />
+   <link rel="stylesheet" type="text/css" href="css/bootstrap-wysihtml5/bootstrap-wysihtml5.css" />
+   <link rel="stylesheet" type="text/css" href="css/bootstrap-datepicker/css/datepicker.css" />
+   <link rel="stylesheet" type="text/css" href="css/bootstrap-timepicker/compiled/timepicker.css" />
+   <link rel="stylesheet" type="text/css" href="css/bootstrap-colorpicker/css/colorpicker.css" />
+   <link rel="stylesheet" href="css/bootstrap-toggle-buttons/static/stylesheets/bootstrap-toggle-buttons.css" />
+   <link rel="stylesheet" href="css/data-tables/DT_bootstrap.css" />
+   <link rel="stylesheet" type="text/css" href="css/bootstrap-daterangepicker/daterangepicker.css" />
+   <link rel="stylesheet" type="text/css" href="css/uniform/css/uniform.default.css" />
+
 </head>
 <!-- END HEAD -->
 <!-- BEGIN BODY -->
@@ -296,9 +312,9 @@ Purchase: http://themeforest.net/item/metronic-responsive-admin-dashboard-templa
 					<span class="arrow "></span>
 					</a>
 					<ul class="sub">
-						<li ><a href="submit_wantlist.html">Submit a Wantlist</a></li>
+						<li class="active"><a href="submit_wantlist.html">Submit a Wantlist</a></li>
 						<li ><a href="repurchases.html">Rental Repurchases</a></li>
-						<li class="active"><a href="shipments.html">Shipments</a></li>
+						<li ><a href="shipments.html">Shipments</a></li>
 					</ul>
 				</li>
 				<li class="has-sub ">
@@ -395,8 +411,8 @@ Purchase: http://themeforest.net/item/metronic-responsive-admin-dashboard-templa
 						<!-- END BEGIN STYLE CUSTOMIZER -->   	
 						<!-- BEGIN PAGE TITLE & BREADCRUMB-->			
 						<h3 class="page-title">
-							Shipments			
-							<small>manage your supply shipments</small>
+							Submit a Wantlist			
+							<small>create a new rental repurchase or supply shipment</small>
 						</h3>
 						<ul class="breadcrumb">
 							<li>
@@ -409,7 +425,7 @@ Purchase: http://themeforest.net/item/metronic-responsive-admin-dashboard-templa
 								<a href="index.html">Supply</a> 
 								<i class="icon-angle-right"></i>
 							</li>
-							<li><a href="#">Shipments</a></li>
+							<li><a href="#">Submit a Wantlist</a></li>
 							<li class="pull-right no-text-shadow">
 								<div id="dashboard-report-range" class="dashboard-date-range tooltips no-tooltip-on-touch-device responsive" data-tablet="" data-desktop="tooltips" data-placement="top" data-original-title="Change dashboard date range">
 									<i class="icon-calendar"></i>
@@ -424,144 +440,69 @@ Purchase: http://themeforest.net/item/metronic-responsive-admin-dashboard-templa
 				<!-- END PAGE HEADER-->
 				<!-- BEGIN PAGE CONTENT-->
 				<div class="row-fluid">
-					<div class="span12">
-						<!-- BEGIN EXAMPLE TABLE PORTLET-->
-							<div class="portlet-body">
-								<div class="clearfix">
-									<!-- <div class="btn-group">
-										<button id="sample_editable_1_new" class="btn green">
-										Add New <i class="icon-plus"></i>
-										</button>
-									</div> -->
-									<div class="btn-group pull-right">
-										<button class="btn dropdown-toggle" data-toggle="dropdown">Export<i class="icon-angle-down"></i>
-										</button>
-										<ul class="dropdown-menu">
-											<li><a href="#">Print</a></li>
-											<li><a href="#">Save as PDF</a></li>
-											<li><a href="#">Export to Excel</a></li>
-										</ul>
-									</div>
-								</div>
-								<table class="table" id="sample_editable_1">
-									<thead>
-										<tr>
-											<th class="table-status">Status</th>
-											<th>PO#</th>
-											<th>Ship Date</th>
-											<th>Units</th>
-											<th>Titles</th>
-											<th>Est. Cost</th>
-											<th>Est. Savings</th>
-										</tr>
-									</thead>
-									<tbody>
-										<tr class="">
-											<td class="table-status-open">Open</td>
-											<td><a class="table-link" href="#">T182378</a></td>
-											<td>2013-09-17</td>
-											<td>1,549</td>
-											<td>195</td>
-											<td>$182,304.48</td>
-											<td>$10,351.96</td>
-											
-										</tr>
-										<tr class="">
-											<td class="table-status-open">Open</td>
-											<td><a class="table-link" href="#">T182377</a></td>
-											<td>2013-09-25</td>
-											<td>899</td>
-											<td>95</td>
-											<td>$104,198.34</td>
-											<td>$1,562.75</td>
-										</tr>
-										<tr class="">
-											<td class="table-status-shipped">Shipped</td>
-											<td><a class="table-link" href="#">71031274</a></td>
-											<td>2013-07-28</td>
-											<td>180</td>
-											<td>43</td>
-											<td>$9,452.10</td>
-											<td>$501.45</td>
-										</tr>
-										<tr class="">
-											<td class="table-status-shipped">Shipped</td>
-											<td><a class="table-link" href="#">017943</a></td>
-											<td>2013-07-29</td>
-											<td>274</td>
-											<td>45</td>
-											<td>$14,540.49</td>
-											<td>$2,465.16</td>
-										</tr>
-										<tr class="">
-											<td class="table-status-shipped">Shipped</td>
-											<td><a class="table-link" href="#">TX18624</a></td>
-											<td>2013-08-01</td>
-											<td>315</td>
-											<td>64</td>
-											<td>$11,294.95</td>
-											<td>$2,643.59</td>
-										</tr>
-										<tr class="">
-											<td class="table-status-shipped">Shipped</td>
-											<td><a class="table-link" href="#">TX0000005</a></td>
-											<td>2013-05-17</td>
-											<td>464</td>
-											<td>69</td>
-											<td>$62,304.48</td>
-											<td>$5,643.87</td>
-										</tr>
-										<tr class="">
-											<td class="table-status-shipped">Shipped</td>
-											<td><a class="table-link" href="#">T1823677</a></td>
-											<td>2013-05-17</td>
-											<td>1,549</td>
-											<td>467</td>
-											<td>$182,304.48</td>
-											<td>$11,578.85</td>
-										</tr>
-										<tr class="">
-											<td class="table-status-cancel">Canceled</td>
-											<td><a class="table-link" href="#">86759302</a></td>
-											<td>2013-05-17</td>
-											<td>212</td>
-											<td>12</td>
-											<td>$12,407.49</td>
-											<td>$974.45</td>
-										</tr>
-										<tr class="">
-											<td class="table-status-shipped">Shipped</td>
-											<td><a class="table-link" href="#">71031274</a></td>
-											<td>2013-07-28</td>
-											<td>180</td>
-											<td>43</td>
-											<td>$9,452.10</td>
-											<td>$562.78</td>
-										</tr>
-										<tr class="">
-											<td class="table-status-shipped">Shipped</td>
-											<td><a class="table-link" href="#">017943</a></td>
-											<td>2013-07-29</td>
-											<td>274</td>
-											<td>45</td>
-											<td>$14,540.49</td>
-											<td>$658.66</td>
-										</tr>
-										<tr class="">
-											<td class="table-status-shipped">Shipped</td>
-											<td><a class="table-link" href="#">TX18624</a></td>
-											<td>2013-08-01</td>
-											<td>315</td>
-											<td>64</td>
-											<td>$11,294.95</td>
-											<td>$2,645.89</td>
-										</tr>
-									</tbody>
-								</table>
-							</div>
-						<!-- END EXAMPLE TABLE PORTLET-->
-					</div>
-				</div>
+               <div class="span12">
+                  <!-- BEGIN SAMPLE FORM PORTLET-->   
+                  <div class="portlet ">
+                
+                     <div class="portlet-body form">
+                        <!-- BEGIN FORM-->
+                        <form action="#" class="form-horizontal">
+                           <div class="control-group">
+                              <label class="control-label">PO#</label>
+                              <div class="controls">
+                                 <input type="text" class="span6 m-wrap popovers" data-trigger="hover" data-original-title="Start typing to auto complete!. E.g: 12345" style="margin: 0 auto;" data-provide="typeahead" data-items="4" data-source="[&quot;T182378&quot;,&quot;T182377&quot;,&quot;12345&quot;,&quot;sample&quot;,&quot;123566&quot;,&quot;12569&quot;]" />
+                              </div>
+                           </div>
+                           <div class="control-group">
+                              <label class="control-label">Wantlist Name</label>
+                              <div class="controls">
+                                 <input type="text" class="span6 m-wrap" />
+                              </div>
+                           </div>
+                           <div class="control-group">
+                              <label class="control-label">Ship Date</label>
+                              <div class="controls">
+                                 <input class="m-wrap m-ctrl-medium date-picker" size="16" type="text" value="12-02-2012" />
+                              </div>
+                           </div>
+                           <div class="control-group">
+                              <label class="control-label">Expires On</label>
+                              <div class="controls">
+                                 <input class="m-wrap m-ctrl-medium date-picker" size="16" type="text" value="12-02-2012" />
+                              </div>
+                           </div>
+                           <div class="control-group">
+                              <label class="control-label">Wantlist Type</label>
+                              <div class="controls">
+                                 <label class="radio line">
+                                 <input type="radio" name="optionsRadios2" value="option1" checked />
+                                 Rental Repurchase
+                                 </label>
+                                 <label class="radio line">
+                                 <input type="radio" name="optionsRadios2" value="option2" />
+                                 Supply Shipment
+                                 </label>  
+                              </div>
+                           </div>
+                           <div class="control-group">
+                              <label class="control-label">Upload File</label>
+                              <div class="controls">
+                                 <input type="file" class="default" />
+                              </div>
+                           </div>
+                           <div class="form-actions">
+														  <button type="submit" class="btn blue">Submit</button>
+														  <button type="button" class="btn">Cancel</button>     
+													 </div>
+                        </form>
+                        <!-- END FORM-->           
+                     </div>
+                  </div>
+                  <!-- END SAMPLE FORM PORTLET-->
+               </div>
+            </div>
+        
+              
 				<!-- END PAGE CONTENT -->
 			</div>
 			<!-- END PAGE CONTAINER-->		
@@ -584,7 +525,6 @@ Purchase: http://themeforest.net/item/metronic-responsive-admin-dashboard-templa
 	<script type="text/javascript" src="js/uniform/jquery.uniform.min.js"></script>	
 	<script type="text/javascript" src="js/bootstrap-daterangepicker/date.js"></script>
 	<script type="text/javascript" src="js/bootstrap-daterangepicker/daterangepicker.js"></script>	
-
 	<script src="js/js/jquery-1.8.3.min.js"></script>	
 	<script src="js/breakpoints/breakpoints.js"></script>		
 	<script src="js/jquery-ui/jquery-ui-1.10.1.custom.min.js"></script>	
@@ -595,18 +535,29 @@ Purchase: http://themeforest.net/item/metronic-responsive-admin-dashboard-templa
 	<script type="text/javascript" src="js/gritter/js/jquery.gritter.js"></script>
 	<script type="text/javascript" src="js/uniform/jquery.uniform.min.js"></script>	
 	<script type="text/javascript" src="js/js/jquery.pulsate.min.js"></script>
-	<script type="text/javascript" src="js/bootstrap-daterangepicker/date.js"></script>
-	<script type="text/javascript" src="js/bootstrap-daterangepicker/daterangepicker.js"></script>	
 	<script type="text/javascript" src="js/uniform/jquery.uniform.min.js"></script>
 	<script type="text/javascript" src="js/data-tables/jquery.dataTables.js"></script>
 	<script type="text/javascript" src="js/data-tables/DT_bootstrap.js"></script>
 	<script src="js/js/app.js"></script>
 
+	 
+	 <script type="text/javascript" src="js/ckeditor/ckeditor.js"></script>  
+   <script type="text/javascript" src="js/bootstrap-fileupload/bootstrap-fileupload.js"></script>
+   <script type="text/javascript" src="js/chosen-bootstrap/chosen/chosen.jquery.min.js"></script>
+   <script type="text/javascript" src="js/uniform/jquery.uniform.min.js"></script>
+   <script type="text/javascript" src="js/bootstrap-wysihtml5/wysihtml5-0.3.0.js"></script> 
+   <script type="text/javascript" src="js/bootstrap-wysihtml5/bootstrap-wysihtml5.js"></script>
+   <script type="text/javascript" src="js/jquery-tags-input/jquery.tagsinput.min.js"></script>
+   <script type="text/javascript" src="js/bootstrap-toggle-buttons/static/js/jquery.toggle.buttons.js"></script>
+   <script type="text/javascript" src="js/bootstrap-datepicker/js/bootstrap-datepicker.js"></script>
+   <script type="text/javascript" src="js/clockface/js/clockface.js"></script>
+   <script type="text/javascript" src="js/bootstrap-colorpicker/js/bootstrap-colorpicker.js"></script>  
+   <script type="text/javascript" src="js/bootstrap-timepicker/js/bootstrap-timepicker.js"></script>
 	<script>
-		jQuery(document).ready(function() {		
-			App.setPage("table_editable");  // set current page
-			App.init(); // init the rest of plugins and elements
-		});
+		jQuery(document).ready(function() {       
+         // initiate layout and plugins
+         App.init();
+      });
 	</script>
 	<!-- END JAVASCRIPTS -->
 </body>
