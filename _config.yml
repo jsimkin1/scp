@@ -1,0 +1,6 @@
+source: ./public
+
+exclude: [config.ru, Gemfile, Gemfile.lock, Procfile, Rakefile, vendor]
+
+
+
