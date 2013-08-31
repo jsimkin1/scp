@@ -1,41 +1,9 @@
-use Rack::Static, 
-  :urls => ["/images", "/js", "/css"],
-  :root => "public"
-
-map "/" do
-  run lambda { |env|
-  [
-    200, 
-    {
-      'Content-Type'  => 'text/html', 
-      'Cache-Control' => 'public, max-age=86400' 
-    },
-    File.open('public/index.html', File::RDONLY)
-  ]
-}
-end
-
-map "/shipments" do
-  run lambda { |env|
-  [
-    200, 
-    {
-      'Content-Type'  => 'text/html', 
-      'Cache-Control' => 'public, max-age=86400' 
-    },
-    File.open('public/shipments.html', File::RDONLY)
-  ]
-}
-
-map "/repurchases" do
-  run lambda { |env|
-  [
-    200, 
-    {
-      'Content-Type'  => 'text/html', 
-      'Cache-Control' => 'public, max-age=86400' 
-    },
-    File.open('public/repurchases.html', File::RDONLY)
-  ]
-}
-end
+require 'rack/contrib/try_static'
+require 'rack/contrib/not_found'
+ 
+use Rack::TryStatic,
+  :root => "_site",
+  :urls => %w[/],
+  :try  => ['index.html', '/index.html']
+ 
+run Rack::NotFound.new('_site/404.html')
