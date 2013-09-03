@@ -395,8 +395,8 @@ Purchase: http://themeforest.net/item/metronic-responsive-admin-dashboard-templa
 						<!-- END BEGIN STYLE CUSTOMIZER -->   	
 						<!-- BEGIN PAGE TITLE & BREADCRUMB-->			
 						<h3 class="page-title">
-							Shipments			
-							<small>manage your supply shipments</small>
+							PO# 86759302		
+							<small>view your order details</small>
 						</h3>
 						<ul class="breadcrumb">
 							<li>
@@ -409,7 +409,13 @@ Purchase: http://themeforest.net/item/metronic-responsive-admin-dashboard-templa
 								<a href="index.html">Supply</a> 
 								<i class="icon-angle-right"></i>
 							</li>
-							<li><a href="#">Shipments</a></li>
+							<li>
+								<a href="shipments.html">Shipments</a>
+								<i class="icon-angle-right"></i>
+							</li>
+							<li>
+								<a href="#">PO# 86759302</a>
+							</li>
 							<li class="pull-right no-text-shadow">
 								<div id="dashboard-report-range" class="dashboard-date-range tooltips no-tooltip-on-touch-device responsive" data-tablet="" data-desktop="tooltips" data-placement="top" data-original-title="Change dashboard date range">
 									<i class="icon-calendar"></i>
@@ -425,140 +431,267 @@ Purchase: http://themeforest.net/item/metronic-responsive-admin-dashboard-templa
 				<!-- BEGIN PAGE CONTENT-->
 				<div class="row-fluid">
 					<div class="span12">
-						<!-- BEGIN EXAMPLE TABLE PORTLET-->
-							<div class="portlet-body">
-								<div class="clearfix">
-									<!-- <div class="btn-group">
-										<button id="sample_editable_1_new" class="btn green">
-										Add New <i class="icon-plus"></i>
-										</button>
-									</div> -->
-									<div class="btn-group pull-right">
-										<button class="btn dropdown-toggle" data-toggle="dropdown">Export<i class="icon-angle-down"></i>
-										</button>
-										<ul class="dropdown-menu">
-											<li><a href="#">Print</a></li>
-											<li><a href="#">Save as PDF</a></li>
-											<li><a href="#">Export to Excel</a></li>
-										</ul>
+						<!-- BEGIN TABS-->
+						<div class="tabbable tabbable-custom">
+							<ul class="nav nav-tabs">
+								<li class="active"><a href="#tab_1_1" data-toggle="tab">Overview</a></li>
+								<li><a href="#tab_1_2" data-toggle="tab">Wantlist Submissions</a></li>
+								<li><a href="#tab_1_3" data-toggle="tab">Invoice</a></li>
+							</ul>
+							<div class="tab-content">
+								<div class="tab-pane row-fluid active" id="tab_1_1">
+									<div class="overview_div">
+										<div class="overview_stat">
+											<p class="stat_name">Units</p>
+											<p class="stat_value" style="color: #00a9e0">212</p>
+											<p class="stat_info"></p>
+										</div>
+										<div class="overview_stat">
+											<p class="stat_name">Titles</p>
+											<p class="stat_value" style="color: #ff9e1b">12</p>
+											<p class="stat_info"></p>
+										</div>
+										<div class="overview_stat" style="width: 25%;">
+											<p class="stat_name">Estimated Cost</p>
+											<p class="stat_value" style="color: #e4002b;">$12,407.49</p>
+											<p class="stat_info"></p>
+										</div>
+										<div class="overview_stat_last">
+											<p class="stat_name">Estimated Savings</p>
+											<p class="stat_value" style="color: #00af66;">$974.45</p>
+											<p class="stat_info"></p>
+										</div>
 									</div>
+									<!-- BEGIN TABLE PORTLET-->
+									<div class="portlet-body">
+										<div class="clearfix">
+											<!-- <div class="btn-group">
+												<button id="sample_editable_1_new" class="btn green">
+												Add New <i class="icon-plus"></i>
+												</button>
+											</div> -->
+											<div class="btn-group pull-right">
+												<button class="btn dropdown-toggle" data-toggle="dropdown">Export<i class="icon-angle-down"></i>
+												</button>
+												<ul class="dropdown-menu">
+													<li><a href="#">Print</a></li>
+													<li><a href="#">Save as PDF</a></li>
+													<li><a href="#">Export to Excel</a></li>
+												</ul>
+											</div>
+										</div>
+										<table class="table" id="sample_editable_1">
+											<thead>
+												<tr>
+													<th>Author</th>
+													<th>Title</th>
+													<th>ISBN</th>
+													<th>Qty Ship/Ord</th>
+													<th>Unit Price</th>
+													<th>Est. Total</th>
+													<th>Est. Savings*</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr class="">
+													<td>Maghsoodnia</td>
+													<td>Astronomy</a></td>
+													<td>9781029384756</td>
+													<td>57/58</td>
+													<td>$18.92</td>
+													<td>$1,078.44</td>
+													<td>$354.45 (4.82%)</td>
+												</tr>
+												<tr class="">
+													<td>McCarthy</td>
+													<td>Computer Science</a></td>
+													<td>9781029384756</td>
+													<td>34/34</td>
+													<td>$24.65</td>
+													<td>$838.10</td>
+													<td>$139.59 (12.43%)</td>
+												</tr>
+												<tr class="">
+													<td>Orumchian</td>
+													<td>Physics Fundamentals</a></td>
+													<td>9781029586720</td>
+													<td>12/12</td>
+													<td>$67.89</td>
+													<td>$814.68</td>
+													<td>$145.78 (13.11%)</td>
+												</tr>
+												<tr class="">
+													<td>Maghsoodnia</td>
+													<td>Astronomy</a></td>
+													<td>9781029384756</td>
+													<td>57/58</td>
+													<td>$18.92</td>
+													<td>$1,078.44</td>
+													<td>$354.45 (4.82%)</td>
+												</tr>
+												<tr class="">
+													<td>McCarthy</td>
+													<td>Computer Science</a></td>
+													<td>9781029384756</td>
+													<td>34/34</td>
+													<td>$24.65</td>
+													<td>$838.10</td>
+													<td>$139.59 (12.43%)</td>
+												</tr>
+												<tr class="">
+													<td>Orumchian</td>
+													<td>Physics Fundamentals</a></td>
+													<td>9781029586720</td>
+													<td>12/12</td>
+													<td>$67.89</td>
+													<td>$814.68</td>
+													<td>$145.78 (13.11%)</td>
+												</tr>
+												<tr class="">
+													<td>Maghsoodnia</td>
+													<td>Astronomy</a></td>
+													<td>9781029384756</td>
+													<td>57/58</td>
+													<td>$18.92</td>
+													<td>$1,078.44</td>
+													<td>$354.45 (4.82%)</td>
+												</tr>
+												<tr class="">
+													<td>McCarthy</td>
+													<td>Computer Science</a></td>
+													<td>9781029384756</td>
+													<td>34/34</td>
+													<td>$24.65</td>
+													<td>$838.10</td>
+													<td>$139.59 (12.43%)</td>
+												</tr>
+												<tr class="">
+													<td>Orumchian</td>
+													<td>Physics Fundamentals</a></td>
+													<td>9781029586720</td>
+													<td>12/12</td>
+													<td>$67.89</td>
+													<td>$814.68</td>
+													<td>$145.78 (13.11%)</td>
+												</tr>
+												<tr class="">
+													<td>Maghsoodnia</td>
+													<td>Astronomy</a></td>
+													<td>9781029384756</td>
+													<td>57/58</td>
+													<td>$18.92</td>
+													<td>$1,078.44</td>
+													<td>$354.45 (4.82%)</td>
+												</tr>
+												<tr class="">
+													<td>McCarthy</td>
+													<td>Computer Science</a></td>
+													<td>9781029384756</td>
+													<td>34/34</td>
+													<td>$24.65</td>
+													<td>$838.10</td>
+													<td>$139.59 (12.43%)</td>
+												</tr>
+												<tr class="">
+													<td>Orumchian</td>
+													<td>Physics Fundamentals</a></td>
+													<td>9781029586720</td>
+													<td>12/12</td>
+													<td>$67.89</td>
+													<td>$814.68</td>
+													<td>$145.78 (13.11%)</td>
+												</tr>
+											</tbody>
+										</table>
+										<p>*Savings calculated based on traditional 50% of list pricing.</p>
+									</div>
+								<!-- END EXAMPLE TABLE PORTLET-->
 								</div>
-								<table class="table" id="sample_editable_1">
-									<thead>
-										<tr>
-											<th class="table-status">Status</th>
-											<th>PO#</th>
-											<th>Ship Date</th>
-											<th>Units</th>
-											<th>Titles</th>
-											<th>Est. Cost</th>
-											<th>Est. Savings</th>
-										</tr>
-									</thead>
-									<tbody>
-										<tr class="">
-											<td class="table-status-open">Open</td>
-											<td><a class="table-link" href="#">T182378</a></td>
-											<td>2013-09-17</td>
-											<td>1,549</td>
-											<td>195</td>
-											<td>$182,304.48</td>
-											<td>$10,351.96</td>
-										</tr>
-										<tr class="">
-											<td class="table-status-open">Open</td>
-											<td><a class="table-link" href="#">T182377</a></td>
-											<td>2013-09-25</td>
-											<td>899</td>
-											<td>95</td>
-											<td>$104,198.34</td>
-											<td>$1,562.75</td>
-										</tr>
-										<tr class="">
-											<td class="table-status-shipped">Shipped</td>
-											<td><a class="table-link" href="#">71031274</a></td>
-											<td>2013-07-28</td>
-											<td>180</td>
-											<td>43</td>
-											<td>$9,452.10</td>
-											<td>$501.45</td>
-										</tr>
-										<tr class="">
-											<td class="table-status-shipped">Shipped</td>
-											<td><a class="table-link" href="#">017943</a></td>
-											<td>2013-07-29</td>
-											<td>274</td>
-											<td>45</td>
-											<td>$14,540.49</td>
-											<td>$2,465.16</td>
-										</tr>
-										<tr class="">
-											<td class="table-status-shipped">Shipped</td>
-											<td><a class="table-link" href="#">TX18624</a></td>
-											<td>2013-08-01</td>
-											<td>315</td>
-											<td>64</td>
-											<td>$11,294.95</td>
-											<td>$2,643.59</td>
-										</tr>
-										<tr class="">
-											<td class="table-status-shipped">Shipped</td>
-											<td><a class="table-link" href="#">TX0000005</a></td>
-											<td>2013-05-17</td>
-											<td>464</td>
-											<td>69</td>
-											<td>$62,304.48</td>
-											<td>$5,643.87</td>
-										</tr>
-										<tr class="">
-											<td class="table-status-shipped">Shipped</td>
-											<td><a class="table-link" href="#">T1823677</a></td>
-											<td>2013-05-17</td>
-											<td>1,549</td>
-											<td>467</td>
-											<td>$182,304.48</td>
-											<td>$11,578.85</td>
-										</tr>
-										<tr class="">
-											<td class="table-status-cancel">Canceled</td>
-											<td><a class="table-link" href="po_86759302.html">86759302</a></td>
-											<td>2013-05-17</td>
-											<td>212</td>
-											<td>12</td>
-											<td>$12,407.49</td>
-											<td>$974.45</td>
-										</tr>
-										<tr class="">
-											<td class="table-status-shipped">Shipped</td>
-											<td><a class="table-link" href="#">71031274</a></td>
-											<td>2013-07-28</td>
-											<td>180</td>
-											<td>43</td>
-											<td>$9,452.10</td>
-											<td>$562.78</td>
-										</tr>
-										<tr class="">
-											<td class="table-status-shipped">Shipped</td>
-											<td><a class="table-link" href="#">017943</a></td>
-											<td>2013-07-29</td>
-											<td>274</td>
-											<td>45</td>
-											<td>$14,540.49</td>
-											<td>$658.66</td>
-										</tr>
-										<tr class="">
-											<td class="table-status-shipped">Shipped</td>
-											<td><a class="table-link" href="#">TX18624</a></td>
-											<td>2013-08-01</td>
-											<td>315</td>
-											<td>64</td>
-											<td>$11,294.95</td>
-											<td>$2,645.89</td>
-										</tr>
-									</tbody>
-								</table>
+							<div class="tab-pane row-fluid active" id="tab_1_2">
+								<!-- BEGIN EXAMPLE TABLE PORTLET-->
+								<div class="portlet-body">
+									<div class="clearfix">
+										<div class="btn-group pull-right">
+											<button class="btn dropdown-toggle" data-toggle="dropdown">Export<i class="icon-angle-down"></i>
+											</button>
+											<ul class="dropdown-menu">
+												<li><a href="#">Print</a></li>
+												<li><a href="#">Save as PDF</a></li>
+												<li><a href="#">Export to Excel</a></li>
+											</ul>
+										</div>
+									</div>
+									<table class="table" id="sample_editable_1">
+										<thead>
+											<tr>
+												<th class="table-status">Status</th>
+												<th>Reference Name</th>
+												<th>Filled / Requested</th>
+												<th>Uploaded On</th>
+												<th>Expires On</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr class="">
+												<td class="table-status-open">Open</td>
+												<td><a class="table-link" href="#">Submission 1</a></td>
+												<td>50/150</td>
+												<td>2013-05-17</td>
+												<td>2013-05-17</td>
+											</tr>
+											<tr class="">
+												<td class="table-status-closed">Closed</td>
+												<td><a class="table-link" href="#">Submission 2</a></td>
+												<td>1/51</td>
+												<td>2013-05-18</td>
+												<td>2013-05-18</td>
+											</tr>
+											<tr class="">
+												<td class="table-status-closed">Closed</td>
+												<td><a class="table-link" href="#">Submission 3</a></td>
+												<td>2/524</td>
+												<td>2013-05-19</td>
+												<td>2013-05-19</td>
+											</tr>
+											<tr class="">
+												<td class="table-status-closed">Closed</td>
+												<td><a class="table-link" href="#">Submission 4</a></td>
+												<td>1/457</td>
+												<td>2013-05-20</td>
+												<td>2013-05-20</td>
+											</tr>
+											<tr class="">
+												<td class="table-status-closed">Closed</td>
+												<td><a class="table-link" href="#">Submission 5</a></td>
+												<td>5/764</td>
+												<td>2013-05-21</td>
+												<td>2013-05-22</td>
+											</tr>
+											<tr class="">
+												<td class="table-status-closed">Closed</td>
+												<td><a class="table-link" href="#">Submission 6</a></td>
+												<td>12/765</td>
+												<td>2013-05-22</td>
+												<td>2013-05-23</td>
+											</tr>
+											<tr class="">
+												<td class="table-status-closed">Closed</td>
+												<td><a class="table-link" href="#">Submission 7</a></td>
+												<td>52/645</td>
+												<td>2013-05-28</td>
+												<td>2013-05-28</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+							<!-- END EXAMPLE TABLE PORTLET-->
 							</div>
-						<!-- END EXAMPLE TABLE PORTLET-->
+							<div class="tab-pane row-fluid active" id="tab_1_3">
+							</div>
+						</div>
+						<!-- END TAB CONTENT -->
+					</div>
+						<!-- END TABS -->
 					</div>
 				</div>
 				<!-- END PAGE CONTENT -->

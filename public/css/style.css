@@ -81,6 +81,43 @@ body {
   color: #00a9e0;
 }
 
+.overview_div{
+  float: left;
+  margin-top: 5px;
+  width: 100%;
+  border-bottom: 1px solid #eee;
+  margin-bottom: 30px;
+}
+
+.overview_stat{
+  margin-top: 20px;
+  float: left;
+  width: 22%;
+  margin-right: 25px;
+  border-right: 1px solid #ccc;
+  min-height: 70px;
+  margin-bottom: 40px;
+}
+
+.overview_stat_last{
+  margin-top: 20px;
+  float: left;
+  width: 22%;
+  min-height: 70px;
+  margin-bottom: 40px;
+}
+
+.stat_name{
+  text-transform: uppercase;
+  color: #777;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.stat_value{
+  font-size: 36px;
+}
+
 .adopt {
   height:368px;
 }
@@ -2573,6 +2610,9 @@ Custom tabs
 .tab-content {
   padding: 0px;  
   overflow: hidden;
+  border-right: none !important;
+  border-left: none !important;
+  border-bottom: none !important;
 }
 
 .tabbable-custom { 
