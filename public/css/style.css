@@ -81,6 +81,93 @@ body {
   color: #00a9e0;
 }
 
+.invoice_summary {
+  margin-top: 30px;
+}
+
+.invoice_entry_row {
+  border-top: 1px solid #ccc;
+  line-height: 3em;
+  padding: 0px 5px 0px 5px;
+  margin-bottom: 0px;
+}
+
+.invoice_entry_total {
+  border-top: 1px solid #ccc;
+  line-height: 3em;
+  padding: 0px 5px 0px 5px;
+  margin-bottom: 0px;
+  background-color: #ddd;
+  font-family: 'MuseoSans-500';
+}
+
+.invoice_savings {
+  text-align: right;
+  margin: 5px 0px 5px 0px;
+  font-family: 'MuseoSans-500';
+  width: 100%;
+}
+
+.download_invoice {
+  float: right;
+  font-family: 'MuseoSans-500';
+}
+
+.btn.yellow{
+  font-family: 'MuseoSans-500';
+}
+
+.invoice_savings_value {
+  color: #ff9e1b;
+}
+
+.invoice_table{
+  margin-top: 30px;
+  float: left;
+  border-top: 1px solid #ddd;
+  padding-top: 20px;
+}
+
+
+.invoice_entry_number{
+  float: right;
+}
+.invoice_address_section{
+  margin-left: 0px !important;
+  float: left;
+}
+
+.invoice_addresses{
+  margin-top: 30px;
+  line-height: 0.9em;
+}
+
+.invoice_header {
+  text-transform: uppercase;
+  font-family: 'MuseoSans-500';
+}
+
+.invoice_number_field{
+  border-bottom: 1px dotted #ddd;
+  margin-top: 20px;
+}
+
+.invoice_number{
+  float: left;
+  text-transform: uppercase;
+  font-family: 'MuseoSans-500';
+  font-size: 14px;
+}
+
+.invoice_date{
+  float: right;
+  font-family: 'MuseoSans-500';
+}
+
+.wantlist_time{
+  color:#aaa;
+}
+
 .overview_div{
   float: left;
   margin-top: 5px;
