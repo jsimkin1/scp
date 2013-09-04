@@ -159,9 +159,14 @@ body {
   font-size: 14px;
 }
 
-.invoice_date{
+.invoice_status_field{
   float: right;
   font-family: 'MuseoSans-500';
+  text-transform: uppercase;
+}
+
+.invoice_status{
+  color: #ff9e1b;
 }
 
 .wantlist_time{
