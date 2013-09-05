@@ -28,6 +28,7 @@ Purchase: http://themeforest.net/item/metronic-responsive-admin-dashboard-templa
 	<link href="js/bootstrap-daterangepicker/daterangepicker.css"rel="stylesheet" type="text/css" />
 	<link href="js/fullcalendar/fullcalendar/bootstrap-fullcalendar.css" rel="stylesheet" />
 	<link href="js/jqvmap/jqvmap/jqvmap.css" media="screen" rel="stylesheet" type="text/css" />
+	<script type="text/javascript" src="js/js/progress_bar.js"></script>
 	<link rel="shortcut icon" href="favicon.ico" />
 	<link rel="stylesheet" href="js/data-tables/DT_bootstrap.css" />
 </head>
@@ -441,25 +442,36 @@ Purchase: http://themeforest.net/item/metronic-responsive-admin-dashboard-templa
 							<div class="tab-content">
 								<div class="tab-pane row-fluid active" id="tab_1_1">
 									<div class="overview_div">
-										<div class="overview_stat">
-											<p class="stat_name">Units</p>
-											<p class="stat_value" style="color: #00a9e0">212</p>
-											<p class="stat_info"></p>
+										<div class="order_status_div span11">
+												<span class="order_fulfillment">10%</span>
+												<span class="order_fulfillment_description">units fulfilled</span>
+												<span class="order_status">Open</span>
+												<span class="order_status_description">This PO will remain open until December 24, 2013</span>
+												<div class="progress">
+													<div class="bar popovers" style="width: 10%;" data-trigger="hover" data-placement="top" data-content="These units have been either shipped to your using your selected shipping method or delivered through the Rafter Rental Repurchase program." data-original-title="21 Units Been Fulfilled"></div>
+												</div>
 										</div>
-										<div class="overview_stat">
-											<p class="stat_name">Titles</p>
-											<p class="stat_value" style="color: #ff9e1b">12</p>
-											<p class="stat_info"></p>
-										</div>
-										<div class="overview_stat" style="width: 25%;">
-											<p class="stat_name">Estimated Cost</p>
-											<p class="stat_value" style="color: #e4002b;">$12,407.49</p>
-											<p class="stat_info"></p>
-										</div>
-										<div class="overview_stat_last">
-											<p class="stat_name">Estimated Savings*</p>
-											<p class="stat_value" style="color: #00af66;">$974.45</p>
-											<p class="stat_info"></p>
+										<div class="overview_stat_div">
+											<div class="overview_stat">
+												<p class="stat_name">Units</p>
+												<p class="stat_value" style="color: #00a9e0">212</p>
+												<p class="stat_info"></p>
+											</div>
+											<div class="overview_stat">
+												<p class="stat_name">Titles</p>
+												<p class="stat_value" style="color: #ff9e1b">12</p>
+												<p class="stat_info"></p>
+											</div>
+											<div class="overview_stat" style="width: 25%;">
+												<p class="stat_name">Estimated Cost</p>
+												<p class="stat_value" style="color: #e4002b;">$12,407.49</p>
+												<p class="stat_info"></p>
+											</div>
+											<div class="overview_stat_last">
+												<p class="stat_name">Estimated Savings*</p>
+												<p class="stat_value" style="color: #00af66;">$974.45</p>
+												<p class="stat_info"></p>
+											</div>
 										</div>
 									</div>
 									<!-- BEGIN TABLE PORTLET-->
@@ -714,7 +726,7 @@ Purchase: http://themeforest.net/item/metronic-responsive-admin-dashboard-templa
 							<div class="tab-pane row-fluid" id="tab_1_3">
 									<div class="invoice_number_field span12">
 										<span class="invoice_number">Invoice# M1001</span>
-										<span class="invoice_status_field">Status: <span class="invoice_status">Pending</span></span>
+										<span class="invoice_status_field">Due Date: January 27, 2014</span>
 									</div>
 									<div class="span4 invoice_address_section">
 											<div class="invoice_addresses">

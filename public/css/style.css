@@ -173,30 +173,75 @@ body {
   color:#aaa;
 }
 
+.order_status_div {
+  display: block !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  margin-left: 5% !important;
+}
+
+.order_status {
+  font-size: 30px;
+  font-family: 'MuseoSans-300', 'Open Sans';
+  color: #00a9e0;
+  float: right;
+  width: 80%;
+  text-align: right;
+  margin-top: -10px;
+}
+
+.order_status_description {
+  color: #aaa;
+  float: right;
+  width: 80%;
+  text-align: right;
+  margin-top: -12px;
+}
+.order_fulfillment {
+  font-size: 45px;
+  font-family: 'MuseoSans-300', 'Open Sans';
+  color: #00a9e0;
+  margin-top: 15px;
+}
+
+.order_fulfillment_description {
+  color: #aaa;
+  text-align: left;
+}
+
+
+.progress{
+  margin-top: 10px;
+}
+
 .overview_div{
   float: left;
-  margin-top: 5px;
+  margin-top: 40px;
   width: 100%;
   border-bottom: 1px solid #eee;
   margin-bottom: 30px;
 }
 
+.overview_stat_div {
+  margin-left: 5% !important;
+}
+
 .overview_stat{
-  margin-top: 20px;
   float: left;
   width: 22%;
   margin-right: 25px;
   border-right: 1px solid #ccc;
   min-height: 70px;
   margin-bottom: 40px;
+  margin-top: 10px;
 }
 
 .overview_stat_last{
-  margin-top: 20px;
   float: left;
   width: 22%;
   min-height: 70px;
   margin-bottom: 40px;
+  margin-top: 10px;
 }
 
 .stat_name{
