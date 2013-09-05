@@ -185,7 +185,6 @@ body {
   font-family: 'MuseoSans-300', 'Open Sans';
   color: #00a9e0;
   float: right;
-  width: 80%;
   text-align: right;
   margin-top: -10px;
 }
@@ -193,7 +192,6 @@ body {
 .order_status_description {
   color: #aaa;
   float: right;
-  width: 80%;
   text-align: right;
   margin-top: -12px;
 }
@@ -227,21 +225,21 @@ body {
 }
 
 .overview_stat{
-  float: left;
-  width: 22%;
-  margin-right: 25px;
+  padding-left: 25px;
   border-right: 1px solid #ccc;
   min-height: 70px;
+  min-width: 220px;
   margin-bottom: 40px;
   margin-top: 10px;
+  margin-left: 0px !important;
 }
 
 .overview_stat_last{
-  float: left;
-  width: 22%;
+  padding-left: 25px;
   min-height: 70px;
   margin-bottom: 40px;
   margin-top: 10px;
+  margin-left: 0px !important;
 }
 
 .stat_name{
