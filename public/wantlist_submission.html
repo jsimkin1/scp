@@ -28,7 +28,6 @@ Purchase: http://themeforest.net/item/metronic-responsive-admin-dashboard-templa
 	<link href="js/bootstrap-daterangepicker/daterangepicker.css"rel="stylesheet" type="text/css" />
 	<link href="js/fullcalendar/fullcalendar/bootstrap-fullcalendar.css" rel="stylesheet" />
 	<link href="js/jqvmap/jqvmap/jqvmap.css" media="screen" rel="stylesheet" type="text/css" />
-	<script type="text/javascript" src="js/js/progress_bar.js"></script>
 	<link rel="shortcut icon" href="favicon.ico" />
 	<link rel="stylesheet" href="js/data-tables/DT_bootstrap.css" />
 </head>
@@ -436,37 +435,59 @@ Purchase: http://themeforest.net/item/metronic-responsive-admin-dashboard-templa
 				<!-- BEGIN PAGE CONTENT-->
 				<div class="row-fluid">
 					<div class="span12">
-							<div class="overview_div">
-								<div class="order_status_div span11">
+							<div class="overview_div" style="margin-top:0px;">
+<!-- 								<div class="order_status_div span11">
 										<span class="order_fulfillment">40%</span>
 										<span class="order_fulfillment_description">Unit Fill Rate</span>
 										<span class="order_status">Processing</span></br>
 										<span class="order_status_description">(Expires at: 2013-05-17 2:45pm)</span>
-										<div class="progress">
-											<div class="bar popovers" style="width: 40%;" data-trigger="hover" data-placement="top" data-content="These units have been either shipped to your using your selected shipping method or delivered through the Rafter Rental Repurchase program." data-original-title="21 Units Been Fulfilled"></div>
+										<div class="progress wantlist_overview_progress">
+											<div class="bar" id="progress_bar" style="width: 0%;"></div>
 										</div>
-								</div>
+								</div> -->
 								<div class="overview_stat_div">
-									<div class="overview_stat span3">
-										<p class="stat_name">Units</p>
-										<p class="stat_value" style="color: #00a9e0">212</p>
-										<p class="stat_info"></p>
+									<div class="overview_stat_div">
+										<div class="overview_stat span3">
+											<p class="stat_name">Units Filled</p>
+											<p class="stat_value" style="color: #00a9e0">212</p>
+											<p class="stat_info"></p>
+										</div>
+										<div class="overview_stat span3">
+											<p class="stat_name">Titles Filled</p>
+											<p class="stat_value" style="color: #ff9e1b">12</p>
+											<p class="stat_info"></p>
+										</div>
+										<div class="overview_stat span3">
+											<p class="stat_name">Estimated Cost</p>
+											<p class="stat_value" style="color: #e4002b;">$12,407.49</p>
+											<p class="stat_info"></p>
+										</div>
+										<div class="overview_stat_last span3">
+											<p class="stat_name">Estimated Savings*</p>
+											<p class="stat_value" style="color: #00af66;">$974.45</p>
+											<p class="stat_info"></p>
+										</div>
 									</div>
-									<div class="overview_stat span3">
-										<p class="stat_name">Titles</p>
-										<p class="stat_value" style="color: #ff9e1b">12</p>
-										<p class="stat_info"></p>
+									<!-- <div class="wantlist_overview_stat span3" id="wantlist_units">
+										<p class="wantlist_statistic_value wantlist_units">212</p>
+										<p class="wantlist_statistic_name">Units Filled</p>
+										<p class="wantlist_statistic_request">(530 Requested)</p>
 									</div>
-									<div class="overview_stat span3">
-										<p class="stat_name">Dollars</p>
-										<p class="stat_value" style="color: #e4002b;">$12,407.49</p>
-										<p class="stat_info"></p>
+									<div class="wantlist_overview_stat span3" id="wantlist_titles">
+										<p class="wantlist_statistic_value">12</p>
+										<p class="wantlist_statistic_name">Titles Filled</p>
+										<p class="wantlist_statistic_request">(21 Requested)</p>
 									</div>
-									<div class="overview_stat_last span3">
-										<p class="stat_name">Estimated Savings*</p>
-										<p class="stat_value" style="color: #00af66;">$974.45</p>
-										<p class="stat_info"></p>
+									<div class="wantlist_overview_stat span3" id="wantlist_dollars">
+										<p class="wantlist_statistic_value">$12,407.49</p>
+										<p class="wantlist_statistic_name">Dollars Filled</p>
+										<p class="wantlist_statistic_request">($29,957.97 Requested)</p>
 									</div>
+									<div class="wantlist_overview_stat span3" id="wantlist_savings">
+										<p class="wantlist_statistic_value">$974.45</p>
+										<p class="wantlist_statistic_name">Est. Savings*</p>
+										<p class="wantlist_statistic_request"></p>
+									</div> -->
 								</div>
 							</div>
 							<!-- BEGIN TABLE PORTLET-->
@@ -637,7 +658,6 @@ Purchase: http://themeforest.net/item/metronic-responsive-admin-dashboard-templa
 	<script type="text/javascript" src="js/uniform/jquery.uniform.min.js"></script>	
 	<script type="text/javascript" src="js/bootstrap-daterangepicker/date.js"></script>
 	<script type="text/javascript" src="js/bootstrap-daterangepicker/daterangepicker.js"></script>	
-
 	<script src="js/js/jquery-1.8.3.min.js"></script>	
 	<script src="js/breakpoints/breakpoints.js"></script>		
 	<script src="js/jquery-ui/jquery-ui-1.10.1.custom.min.js"></script>	
@@ -654,7 +674,7 @@ Purchase: http://themeforest.net/item/metronic-responsive-admin-dashboard-templa
 	<script type="text/javascript" src="js/data-tables/jquery.dataTables.js"></script>
 	<script type="text/javascript" src="js/data-tables/DT_bootstrap.js"></script>
 	<script src="js/js/app.js"></script>
-
+	<script type="text/javascript" src="js/js/progress_bar.js"></script>
 	<script>
 		jQuery(document).ready(function() {		
 			App.setPage("table_editable");  // set current page
