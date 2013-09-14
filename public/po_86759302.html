@@ -442,7 +442,7 @@ Purchase: http://themeforest.net/item/metronic-responsive-admin-dashboard-templa
 							<div class="tab-content">
 								<div class="tab-pane row-fluid active" id="tab_1_1">
 									<div class="overview_div">
-										<div class="order_status_div span11">
+										<!-- <div class="order_status_div span11">
 											<span class="order_fulfillment">40%</span>
 											<span class="order_fulfillment_description">Units fulfilled as of September 10, 2013</span>
 											<span class="order_status">Open</span></br>
@@ -450,15 +450,15 @@ Purchase: http://themeforest.net/item/metronic-responsive-admin-dashboard-templa
 											<div class="progress wantlist_overview_progress">
 												<div class="bar" id="progress_bar" style="width: 0%;"></div>
 											</div>
-										</div>
-										<!-- <div class="order_status_div span11">
-												<span class="chart_header">Units Ordered</span>
-												<span class="order_fulfillment">10%</span>
+										</div> -->
+										<div class="order_status_div span11">
+												<span class="chart_header">Units Ordered & Fulfilled</span>
+												<!-- <span class="order_fulfillment">10%</span>
 												<span class="order_fulfillment_description">units fulfilled</span>
 												<span class="order_status">Open</span></br>
-												<span class="order_status_description">This PO will remain open until December 24, 2013</span>
-												<div id="po_submissions" style="min-width: 310px; height: 200px; margin: 0 auto"></div>
-										</div> -->
+												<span class="order_status_description">This PO will remain open until December 24, 2013</span> -->
+												<div id="po_submissions" style="width: 100%; height: 200px; margin: 0 auto; float:left;"></div>
+										</div> 
 										<!-- <div class="overview_stat_div">
 											<div class="overview_stat span3">
 												<p class="stat_name">Units</p>
@@ -522,7 +522,7 @@ Purchase: http://themeforest.net/item/metronic-responsive-admin-dashboard-templa
 													<th>Author</th>
 													<th>Title</th>
 													<th>ISBN</th>
-													<th>Qty Ship/Ord</th>
+													<th>Qty Fulfilled/Ordered</th>
 													<th>Unit Price</th>
 													<th>Est. Total</th>
 													<th>Est. Savings*</th>
@@ -964,6 +964,9 @@ Purchase: http://themeforest.net/item/metronic-responsive-admin-dashboard-templa
 	<script type="text/javascript" src="js/data-tables/DT_bootstrap.js"></script>
 	<script src="js/js/app.js"></script>
 	<script type="text/javascript" src="js/js/progress_bar.js"></script>
+	<script src="http://code.highcharts.com/highcharts.js"></script>
+	<script src="http://code.highcharts.com/modules/exporting.js"></script>
+	<script type="text/javascript" src="js/js/high_chart.js"></script>
 	<script>
 		jQuery(document).ready(function() {		
 			App.setPage("table_editable");  // set current page

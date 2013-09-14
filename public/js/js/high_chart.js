@@ -26,9 +26,16 @@ $(document).ready(function(){
               labels: {
                 format: '{value:%e-%b}',
               },
+              title: {
+                  text: 'Date'
+              },
           },
           legend: {
-            enabled: false
+            enabled: true,
+            verticalAlign:'top',
+            layout:'horizontal',
+            floating: true,
+            align: 'right',
           },
           exporting: {
             enabled: false
@@ -39,10 +46,12 @@ $(document).ready(function(){
               },
           },
           tooltip: {
-              pointFormat: 'Wantlists Submitted: {point.y}'
+              pointFormat: '{series.name}: {point.y}'
           },
           plotOptions: {
               area: {
+                  pointInterval: 7 * 24 * 36e5,
+                  pointStart: Date.UTC(2013, 1, 10), //one week
                   marker: {
                       enabled: false,
                       symbol: 'circle',
@@ -53,17 +62,28 @@ $(document).ready(function(){
                           }
                       }
                   }
-              }
+              },
+
           },
+          colors: [
+             '#00a9e0', 
+             '#84329b'
+          ],
           series: [{
-              data: [3, 4, 1, 2,1, 1 , 2, 1, 3, 1, 0, 0,
-                  1 , 2, 5, 3, 4, 1, 2,1 , 1, 1, 4, 0,
-                  1 , 2, 5, 4, 4, 1, 3,1 , 3, 1, 0, 3,
-                  1 , 2, 2, 3, 1, 0, 1,2 , 5, 1, 2, 1,
-                  1 , 2, 5, 1, 4, 3, 1,4 , 3, 1, 0, 2,],
-              pointInterval: 7 * 24 * 36e5,
-            pointStart: Date.UTC(2013, 1, 10) //one week
-          }]
+              name: 'Units Ordered',
+              data: [1, 4, 7, 9,18, 22 , 5, 12, 35, 0, 0, 0,
+                  18, 22 , 5, 12, 35, 5, 12, 35,4, 7, 9,6,
+                  12, 35, 5, 12, 4,5, 12, 35,4, 7, 9, 5, 
+                  9, 5, 12, 5, 12, 35,4, 7, 35, 5, 12, 4,
+                  5, 12, 35,4, 7, 9, 5, 12, 35, 5, 12, 4],
+          }, {
+                name: 'Units Fulfilled',
+                data: [null,null,null,null,null,null,null,null,null,null,null,null, 
+                       null,null,null,null,null,null,null,null,null,null,null,null,
+                       null,null,null,null,null,null,null,null,null,null,null,null,
+                       null,null,null,null,null,null,null,null,null,null,null,null,
+                  1 , 22,18,64,12,18,61,21,84,11,15,45]
+            }]
       });
   });
     
